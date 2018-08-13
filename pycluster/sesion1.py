@@ -13,6 +13,26 @@ tupla=(1,3,5,'cuatro') #tupla
 #Diferencias en la funcionalidad. La tupla se crea y es innmutable.
 #Esto es, no se puede modificar la tupla
 
+
+
+
+#Clases
+
+class Terrestre():
+    def desplazar(self):
+        print("El animal CAMINA")
+class Acuatico():
+    def desplazar(self):
+        print("El animal NADA")
+
+class Cocodrilo(Acuatico, Terrestre,):
+    pass
+
+coco=Cocodrilo()
+coco.desplazar() #Usa el primer objeto que toma la clase cocodrilo.
+
+
+
 '''como python es dinamico puedo re asignar el tipo de dato
 solo cambiado el valor de la variable'''
 
@@ -67,8 +87,6 @@ y el for inicio desde el 0, si se coloca el aumento desde el inicio del while.''
 
 for elemento in lista:
     print("Elementos: ", elemento)
-
-
 
 
 
